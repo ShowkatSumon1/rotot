@@ -1,0 +1,122 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 12;
+    background-color: $color-secondary;
+    padding: 3rem;
+
+    @media only screen and (max-width: $bp-medium){
+        padding: 3rem 6rem;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-menu {
+        position: relative;
+        &__item {
+            display: inline-block;
+        }
+        &__link {
+            display: block;
+            padding: 0 2rem;
+            font-weight: 600;
+            font-size: 1.7rem;
+            text-transform: uppercase;
+            color: $color-black;
+            transition: all 0.3s ease;
+        }
+        &__link:hover,
+        &__link:active {
+            color: $color-primary;
+        }
+
+        @media only screen and (max-width: $bp-medium){
+            display: none;
+        }
+    }
+}
+
+.small-menu {
+
+    i {
+        font-size: 2.5rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+.mobile {
+    position: fixed;
+    top: 9rem;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-primary;
+    z-index: 9;
+
+    &__menu {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        &__item {
+            margin: 1rem;
+        }
+
+        &__link{
+            &:link,
+            &:visited {
+                font-size: 3rem;
+                font-weight: 300;
+                color: $color-black;
+                display: inline-block;
+                padding: 1rem 2rem;
+
+                background: linear-gradient(120deg, transparent 0, transparent 50%, $color-secondary 50%);
+                background-size: 230%;
+                transition: all 0.4s ease;
+            }
+            &:hover,
+            &:active {
+                background-position: 100%;
+                color: $color-black;
+                transform: translateX(1rem);
+            }
+        }
+        
+    }
+}
+
+.fixed {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.search {
+
+    &__box {
+        position: absolute;
+        top: 200%;
+        right: 0;
+
+        input {
+            padding: 0.5rem;
+
+            &:focus {
+                outline: 1px solid $color-primary;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.testimonial {
+    background-color: $color-secondary;
+    border-radius: 0 0 0 15%;
+    text-align: center;
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10rem 0 2rem;
+        .img-box{
+            .relative {
+                display: inline-block;
+                position: relative;
+            }
+            .img-over {
+                position: absolute;
+                width: 121px;
+                height: 121px;
+                border-radius: 50%;
+                top: 6%;
+                left: 6%;
+            }
+
+            h6 {
+                color: $color-primary;
+                margin-top: 3px;
+            }
+        }
+        p {
+            width: 30%;
+            padding: 3rem;
+            margin-left: 2rem;
+            line-height: 1.5;
+            background-color: #fff;
+            text-align: left;
+        }
+    }
+
+    &__icon {
+        font-size: 4.5rem;
+        margin-left: -1rem;
+    }
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    background-color: $color-black !important;
+}
+
+.owl-theme .owl-dots .active span{
+    background-color: $color-primary !important;
+}

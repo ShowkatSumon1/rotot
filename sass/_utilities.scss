@@ -1,0 +1,31 @@
+.padding-lrg{
+    padding: 11rem 0;
+}
+.padding-med{
+    padding: 6rem 0;
+}
+
+.after-primary {
+    border-bottom: 1px solid $color-white;
+
+    &:after {
+        content: "";
+        display: block;
+        margin-top: 3px;
+        width: 40%;
+        height: 0.7rem;
+        background-color: $color-primary;
+    }
+}
+.after-secondary {
+    border-bottom: 1px solid $color-primary;
+
+    &:after {
+        content: "";
+        display: block;
+        margin-top: 3px;
+        width: 40%;
+        height: 0.7rem;
+        background-color: $color-secondary;
+    }
+}

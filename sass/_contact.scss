@@ -1,0 +1,38 @@
+.contact {
+    text-align: center;
+
+    .form {
+        margin: auto;
+        margin-top: 3.5rem;
+        width: 30%;
+
+        @media only screen and (max-width: $bp-medium){
+            width: 50%;
+        }
+
+        input:not(:last-child),
+        textarea{
+            width: 100%;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            color: #8f8d8d;
+            border: 1px solid #daf0fe;
+
+            &:focus {
+                outline: none;
+            }
+        }
+        .btn {
+            margin-top: 2rem;
+            border: 1px solid transparent;
+            border-radius: 3rem;
+            padding: 1.5rem 4.5rem;
+            text-transform: inherit;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $color-secondary;
+            }
+        }
+    }
+}

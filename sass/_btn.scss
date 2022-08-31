@@ -1,0 +1,19 @@
+.btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 1.5rem 3.5rem;
+    border-radius: 7px;
+    box-shadow: $shadow-light;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-grey-dark-1;
+    }
+    &:active {
+        transform: translateY(-3px);
+    }
+}

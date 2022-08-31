@@ -1,0 +1,66 @@
+.intro {
+    background-color: $color-secondary;
+    padding: 25rem 0 3rem;
+    border-radius: 0 0 0 15%;
+    position: relative;
+
+    @media only screen and (max-width: $bp-medium){
+        padding-top: 20rem;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-gap: 4rem;
+
+        @media only screen and (max-width: $bp-medium){
+            grid-template-columns: repeat(1, 1fr);
+            padding: 0 20rem;
+        }
+        @media only screen and (max-width: $bp-small){
+            padding: 0 5rem;
+        }
+    }
+
+    &__left {
+        h2 span {
+            font-size: 8rem;
+        }
+        p {
+            width: 95%;
+            margin: 2rem 0 3rem;
+        }
+        
+        .btn:not(:last-child){
+            margin-right: 1rem;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__icons {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 9%;
+        transform: translateY(-50%);
+        &__icon {
+            background-color: $color-primary;
+            color: $color-white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: end;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: $color-black;
+            }
+        }
+    }
+}
